@@ -1,3 +1,1 @@
-# Saucy
-
-## Recipe book and grocery list
+New readme for Saucy
