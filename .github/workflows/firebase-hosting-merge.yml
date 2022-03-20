@@ -18,4 +18,4 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_SAUCY_344015 }}'
           channelId: live
           projectId: saucy-344015
-          entryPoint: "./saucy"
+          entryPoint: "./saucy/Frontend"
