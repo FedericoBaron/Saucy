@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: cd saucy && npm ci && npm run build
+      - run: cd saucy && cd Frontend && npm ci && npm run build
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_SAUCY_344015 }}'
           projectId: saucy-344015
-          entryPoint: "./saucy"
+          entryPoint: "./saucy/Frontend"
